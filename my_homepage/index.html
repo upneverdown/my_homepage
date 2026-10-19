@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>余韩毅的个人主页</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 首屏 -->
+    <section class="hero">
+        <h1 class="name">余韩毅</h1>
+        <p class="quote">sayless</p>
+    </section>
+
+    <!-- 关于我 -->
+    <section class="about">
+        <h2>关于我</h2>
+        <p>一只小猪。</p>
+    </section>
+
+    <!-- 音乐角落 -->
+    <section class="music">
+        <h2>音乐角落</h2>
+        <div class="player">
+            <div class="player-header">
+                <div class="album-cover"></div>
+                <div class="player-info">
+                    <p class="song-title">正在听：陈绮贞 - 小步舞曲</p>
+                    <p class="lyric">“还有多少回忆。”</p>
+                </div>
+            </div>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <div class="player-controls">
+                <button class="control-btn">⏮</button>
+                <button class="control-btn play-btn">▶</button>
+                <button class="control-btn">⏭</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品集 -->
+    <section class="portfolio">
+        <h2>作品集</h2>
+        <div class="polaroid">
+            <div class="polaroid-img">
+                <svg viewBox="0 0 200 200" width="120" height="120" class="polaroid-svg">
+                    <circle cx="100" cy="70" r="25" fill="#a3b8a3" opacity="0.6"/>
+                    <path d="M10 180 L70 110 L110 150 L150 90 L190 180 Z" fill="#8fbc8f" opacity="0.5"/>
+                </svg>
+            </div>
+            <p class="polaroid-caption">《含义待办事项》</p>
+        </div>
+    </section>
+
+    <!-- 新增：电子木鱼 -->
+    <section class="wooden-fish">
+        <h2>电子木鱼</h2>
+        <div class="fish-container" id="fishContainer">
+            <div class="fish-icon" id="fishIcon">
+                <!-- 极简木鱼 SVG -->
+                <svg viewBox="0 0 100 100" width="120" height="120">
+                    <ellipse cx="50" cy="50" rx="35" ry="25" fill="#e8dcc7" stroke="#b8a990" stroke-width="2"/>
+                    <path d="M25 40 Q50 20 75 40" fill="none" stroke="#b8a990" stroke-width="2"/>
+                    <path d="M30 45 Q50 30 70 45" fill="none" stroke="#b8a990" stroke-width="1.5" opacity="0.6"/>
+                    <circle cx="50" cy="50" r="5" fill="#b8a990"/>
+                    <path d="M40 65 Q50 72 60 65" fill="none" stroke="#b8a990" stroke-width="2"/>
+                </svg>
+            </div>
+            <p class="merit-text">功德：<span id="meritCount">0</span></p>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>© 2026 余韩毅. sayless。</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
